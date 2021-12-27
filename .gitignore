@@ -1,0 +1,13 @@
+.ipynb_checkpoints
+of2106-py1.9.0-cpu.sif
+pydrl/notebooks/RE_means.png
+pydrl/notebooks/RE_std.png
+pydrl/notebooks/data/
+pydrl/notebooks/.ipynb_checkpoints/
+pydrl/notebooks/mesh_dependency_means.png
+pydrl/notebooks/mesh_dependency_std.png
+pydrl/notebooks/mesh_o3_i3_cl.png
+pydrl/notebooks/mesh_o3_i3_mean.png
+pydrl/notebooks/mesh_o3_i3_std.png
+pydrl/notebooks/temp/
+test_cases/run/

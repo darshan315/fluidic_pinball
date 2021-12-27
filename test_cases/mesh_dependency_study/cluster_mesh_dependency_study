@@ -1,0 +1,29 @@
+#!usr/bin/sh -l
+
+echo -e " \n MESH DEPENDENCY LEVEL = 75%L \n "
+
+mkdir -p ../run/mesh_o1_i1
+cp -r mesh_o1_i1/* ../run/mesh_o1_i1
+cd ../..
+sbatch test_cases/run/mesh_o1_i1/job.sh
+cd test_cases/mesh_dependency_study
+
+
+
+echo -e " \n MESH DEPENDENCY LEVEL = 75%L \n "
+
+mkdir -p ../run/mesh_o2_i2
+cp -r mesh_o2_i2/* ../run/mesh_o2_i2
+cd ../..
+sbatch test_cases/run/mesh_o2_i2/job.sh
+cd test_cases/mesh_dependency_study
+
+
+
+echo -e " \n MESH DEPENDENCY LEVEL = 75%L \n "
+
+mkdir -p ../run/mesh_o3_i3d
+cp -r mesh_o3_i3/* ../run/mesh_o3_i3
+cd ../..
+sbatch test_cases/run/mesh_o3_i3/job.sh
+cd test_cases/mesh_dependency_study

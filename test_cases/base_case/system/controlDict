@@ -23,15 +23,15 @@ startTime       0;
 
 stopAt          endTime;
 
-endTime         1500;
+endTime         2000;
 
-deltaT          0.1;
+deltaT          0.01;
 
 writeControl    adjustableRunTime;
 
 writeInterval   1.0;
 
-purgeWrite      0;
+purgeWrite      1;
 
 writeFormat     binary;
 
@@ -43,7 +43,7 @@ timePrecision   8;
 
 adjustTimeStep yes;
 
-maxDeltaT 1e-2;
+maxDeltaT 0.01;
 
 maxCo 1.0;
 
@@ -55,9 +55,9 @@ functions
     {
         type            forceCoeffs;
         libs            (forces);
-        writeControl    timeStep;
-        writeInterval   1;
+        writeControl    writeTime;
         log false;
+        writeFields     yes;
 
         patches
         (
@@ -75,6 +75,53 @@ functions
         lRef        2.5;
         Aref        0.05;
     }
+    
+    
+    field_cylinder_a
+    {
+
+        type            surfaceFieldValue;
+        libs            (fieldFunctionObjects);
+        fields          (forces:forceCoeff);
+        operation       sum;
+        regionType      faceZone;
+        name            faceZone_a;
+        weightField     none;
+        writeFields     no;
+        surfaceFormat   raw;
+
+    }
+
+    field_cylinder_b
+    {
+
+        type            surfaceFieldValue;
+        libs            (fieldFunctionObjects);
+        fields          (forces:forceCoeff);
+        operation       sum;
+        regionType      faceZone;
+        name            faceZone_b;
+        weightField     none;
+        writeFields     no;
+        surfaceFormat   raw;
+
+    }
+    field_cylinder_c
+    {
+
+        type            surfaceFieldValue;
+        libs            (fieldFunctionObjects);
+        fields          (forces:forceCoeff);
+        operation       sum;
+        regionType      faceZone;
+        name            faceZone_c;
+        weightField     none;
+        writeFields     no;
+        surfaceFormat   raw;
+
+    }
+
+
 }
 
 // ************************************************************************* //

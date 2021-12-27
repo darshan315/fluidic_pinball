@@ -8,12 +8,10 @@ touch post.foam
 
 # mesh creation
 runApplication blockMesh
-# runApplication snappyHexMesh -overwrite
-# runApplication extrudeMesh
+runApplication topoSet
 
 # set inlet velocity
 cp -r 0.org 0
-# runApplication setExprBoundaryFields
 
 # decompose and run case
 runApplication decomposePar
