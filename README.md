@@ -1,3 +1,4 @@
+
 # Fluidic Pinball - Controlling Flow by Reinforcement Learning
 
 In this repository we attempt to control the flow around three cylinders placed as fluidic pinball setup [[Pastur et al.](https://arxiv.org/pdf/2104.05104.pdf)]. 
@@ -32,9 +33,9 @@ In this repository we attempt to control the flow around three cylinders placed 
   + <details>
     <summary markdown="spawn"> Meshing </summary> 
     
-    Meshing of the computational domain is achieved by the blockMesh functionality in OpenFOAM in which the domain is devided in *N* numbers of hexahedron blocks. The mesh cells are hexahedron. The blockMesh is significantly faster than snappyHexMesh. 
+    Meshing of the computational domain is achieved by the blockMesh functionality in OpenFOAM in which the domain is divided in *N* numbers of hexahedron blocks. The mesh cells are hexahedron. The blockMesh is significantly faster than snappyHexMesh. 
     
-    For implemention refer [this](https://github.com/darshan315/fluidic_pinball/blob/main/test_cases/base_case/system/blockMeshDict) file.
+    For implementation refer [this](https://github.com/darshan315/fluidic_pinball/blob/main/test_cases/base_case/system/blockMeshDict) file.
   
     </details>
   
@@ -42,7 +43,7 @@ In this repository we attempt to control the flow around three cylinders placed 
   + <details>
     <summary markdown="spawn">Boundary Conditions </summary>
   
-    The inlet boundary condition is appied to the left, top and bottom sides of the rectangle containing cylinders. The inlet boundary condition is applied for uniform velocity BC. The outlet boundary condition is applied to right side of the rectangle as `ZeroGradient`. The `noSlip` boundary condition is applied to the all cylinders. For more details see [this](https://github.com/darshan315/fluidic_pinball/blob/main/test_cases/base_case/0.org/U), [this](https://github.com/darshan315/fluidic_pinball/blob/main/test_cases/base_case/0.org/p) and [this](https://github.com/darshan315/fluidic_pinball/blob/main/test_cases/base_case/system/blockMeshDict) files.
+    The inlet boundary condition is applied to the left, top and bottom sides of the rectangle containing cylinders. The inlet boundary condition is applied for uniform velocity BC. The outlet boundary condition is applied to right side of the rectangle as `ZeroGradient`. The `noSlip` boundary condition is applied to the all cylinders. For more details see [this](https://github.com/darshan315/fluidic_pinball/blob/main/test_cases/base_case/0.org/U), [this](https://github.com/darshan315/fluidic_pinball/blob/main/test_cases/base_case/0.org/p) and [this](https://github.com/darshan315/fluidic_pinball/blob/main/test_cases/base_case/system/blockMeshDict) files.
     </details>
   
   + <details>
@@ -64,21 +65,21 @@ In this repository we attempt to control the flow around three cylinders placed 
   
   
     + <details>
-      <summary markdown="spawn">Click to see figure for c<sub>L</sub> of all individial cylinder where, Re = 100. </summary>
+      <summary markdown="spawn">Click to see figure for c<sub>L</sub> of all individual cylinder where, Re = 100. </summary>
     
       ![bieker_100_cl](https://user-images.githubusercontent.com/50383431/147487488-1e4eda65-65f7-495e-8ab0-b08e64387fc4.png)
 
       </details>
    
     + <details>
-      <summary markdown="spawn">Click to see figure for c<sub>L</sub> of all individial cylinder where, Re = 140.  </summary>
+      <summary markdown="spawn">Click to see figure for c<sub>L</sub> of all individual cylinder where, Re = 140.  </summary>
     
       ![bieker_140_cl](https://user-images.githubusercontent.com/50383431/147487531-0f772a38-bb50-4285-aad1-b49fe6a5aa2b.png)
 
       </details>
   
     + <details>
-      <summary markdown="spawn">Click to see figure for c<sub>L</sub> of all individial cylinder where, Re = 200.  </summary>
+      <summary markdown="spawn">Click to see figure for c<sub>L</sub> of all individual cylinder where, Re = 200.  </summary>
    
       ![bieker_200_cl](https://user-images.githubusercontent.com/50383431/147487541-6365ad71-c9f1-4a24-b7ea-3cd8da09888d.png)
 
