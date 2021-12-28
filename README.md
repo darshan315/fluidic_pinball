@@ -157,14 +157,16 @@ In this repository we attempt to control the flow around three cylinders placed 
   + <details>
     <summary markdown="spawn">Click to see figure for mean of c<sub>L</sub> (&mu;<sub>c<sub>L</sub></sub>) on different Reynolds numbers </summary>
   
-    ![RE_means](https://user-images.githubusercontent.com/50383431/147491854-c75fb93e-3d15-4acc-a148-3de0a73732d5.png)
+    ![RE_means](https://user-images.githubusercontent.com/50383431/147584654-2f2daf7d-213b-4a96-9644-93e95d34866d.png)
+  
+  
 
     </details>
   
   + <details>
     <summary markdown="spawn">Click to see figure for standard deviation of c<sub>L</sub> (&sigma;<sub>c<sub>L</sub></sub>) on Reynolds numbers </summary>
-    
-    ![RE_std](https://user-images.githubusercontent.com/50383431/147491870-b491493b-edb0-473e-8b3b-477dc447c0e6.png)
+   
+    ![RE_std](https://user-images.githubusercontent.com/50383431/147584718-d77fd2a5-47b9-4ef7-a019-7cfb1a100418.png)
 
     </details>
   
@@ -178,3 +180,4 @@ In this repository we attempt to control the flow around three cylinders placed 
 <summary markdown="spawn"> Click to expand! </summary>
   Nothing yet but soon !
 </details>
+
