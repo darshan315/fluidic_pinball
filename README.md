@@ -159,14 +159,27 @@ In this repository we attempt to control the flow around three cylinders placed 
   
     ![RE_means](https://user-images.githubusercontent.com/50383431/147584654-2f2daf7d-213b-4a96-9644-93e95d34866d.png)
   
-  
-
     </details>
   
   + <details>
     <summary markdown="spawn">Click to see figure for standard deviation of c<sub>L</sub> (&sigma;<sub>c<sub>L</sub></sub>) on Reynolds numbers </summary>
    
     ![RE_std](https://user-images.githubusercontent.com/50383431/147584718-d77fd2a5-47b9-4ef7-a019-7cfb1a100418.png)
+
+    </details>
+  
+  + <details>
+    <summary markdown="spawn">Click to see figure for Mean and standard deviation comparisoin with referance by varing Reynolds number. </summary>
+     
+    Referance can be found [here](https://arxiv.org/pdf/2104.05104.pdf). Where, <img src="https://latex.codecogs.com/svg.image?\inline&space;\Large|\overline{\mu_{c_L}}|" title="\inline \Large|\overline{\mu_{c_L}}|" /> is absoulate value of mean of mean-lift for each cylinder. <img src="https://latex.codecogs.com/svg.image?\inline&space;\sigma_{c_L}" title="\inline \sigma_{c_L}" /> is sum of standard deviation for each cylinder. <img src="https://latex.codecogs.com/svg.image?\inline&space;{c_L}_A" title="\inline {c_L}_A" />, <img src="https://latex.codecogs.com/svg.image?\inline&space;{c_L}_B" title="\inline {c_L}_B" />, and <img src="https://latex.codecogs.com/svg.image?\inline&space;{c_L}_C" title="\inline {c_L}_C" /> represents lift for cylinder A, B and C respectively. <img src="https://latex.codecogs.com/svg.image?\inline&space;\mu_{{c_L}_A}" title="\inline \mu_{{c_L}_A}" />, <img src="https://latex.codecogs.com/svg.image?\inline&space;\mu_{{c_L}_B}" title="\inline \mu_{{c_L}_B}" /> and <img src="https://latex.codecogs.com/svg.image?\inline&space;\mu_{{c_L}_C}" title="\inline \mu_{{c_L}_C}" /> denotes mean of lift over soecified timestep for cylinder A, B and C respectively. <img src="https://latex.codecogs.com/svg.image?\inline&space;\sigma_{{c_L}_A}" title="\inline \sigma_{{c_L}_A}" />, <img src="https://latex.codecogs.com/svg.image?\inline&space;\sigma_{{c_L}_B}" title="\inline \sigma_{{c_L}_B}" />, and <img src="https://latex.codecogs.com/svg.image?\inline&space;\sigma_{{c_L}_C}" title="\inline \sigma_{{c_L}_C}" /> represents standard deviation of lift for cylinder A, B and C respectively.  
+  
+  
+    ![eq1](https://latex.codecogs.com/svg.image?\Large|\overline{\mu_{c_L}}|&space;=&space;\left|\frac{\left(&space;\mu_{{c_L}_A}&space;&plus;\mu_{{c_L}_B}&plus;\mu_{{c_L}_C}&space;\right)}{3}\right|)
+  
+  
+    ![](https://latex.codecogs.com/svg.image?%5CLarge%5Csigma_%7Bc_L%7D%20=%20%5Csigma_%7B%7Bc_L%7D_A%7D&plus;%5Csigma_%7B%7Bc_L%7D_B%7D&plus;%5Csigma_%7B%7Bc_L%7D_C%7D)
+   
+     ![RE_std_mean_combined](https://user-images.githubusercontent.com/50383431/151224157-6de89278-4d38-4721-815c-742419bab2f1.png)
 
     </details>
   
