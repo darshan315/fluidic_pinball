@@ -11,3 +11,5 @@ pydrl/notebooks/mesh_o3_i3_mean.png
 pydrl/notebooks/mesh_o3_i3_std.png
 pydrl/notebooks/temp/
 test_cases/run/
+pydrl/data/
+pydrl/notebooks/RE_std_mean_combined.png
